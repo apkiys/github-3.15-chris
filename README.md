@@ -32,6 +32,8 @@
 21. Go to GitHub Actions to observe the deployment status.
 22. Remove/delete/terminate all AWS service/resources that were created.
 
+https://github.com/apkiys/github-3.15-chris
+
 ## Logging with AWS CloudWatch
 23. Access CloudWatch Log Groups to see the logs.
 ![image](https://github.com/apkiys/github-3.15-chris/assets/20112494/009cb885-f734-41e9-a909-c646dc02b525)
