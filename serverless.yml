@@ -1,0 +1,22 @@
+service: github-3-15-chris
+frameworkVersion: '3'
+
+provider:
+  name: aws
+  runtime: nodejs18.x
+  region: ap-southeast-1
+  deploymentBucket:
+    name: github.3.15.chris
+
+functions:
+  api:
+    handler: index.handler
+    events:
+      - httpApi:
+          path: /
+          method: get
+    environment:
+      ACCESS_KEY: ${ssm:Chris_Key}
+
+plugins:
+  - serverless-offline
