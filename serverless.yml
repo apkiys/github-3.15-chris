@@ -17,6 +17,10 @@ functions:
           method: get
     environment:
       ACCESS_KEY: ${ssm:Chris_Key}
+  hello:
+    handler: handler.hello
+    lambdaInsights: true
 
 plugins:
   - serverless-offline
+  - serverless-plugin-lambda-insights
